@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link rel="stylesheet" href="/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js/jquery-3.6.0.min.js"></script>
+  <script>
+      console.log($)
+      $("p").click();
+      $("p").click(function(){
+          console.log("you have clicked")
+      })
+  </script>
     <header>
         <i class="fas fa-3x fa-file-contract"></i>
        <nav>
@@ -74,7 +81,7 @@
                 </label>    
             </div><br>   
          </div>
-         <div >
+         <!-- <div >
             <h2>Perzssdgsd Info</h2>
             <div class="form">
                <input type="text" name="name" autocomplete="off" required />
@@ -106,7 +113,7 @@
                    <span class="content-name">Link</span>
                </label>    
            </div><br>   
-        </div>
+        </div> -->
          
 
 
@@ -127,4 +134,5 @@
 
 
 </body>
+<script src="script.js/script.js"></script>
 </html>
