@@ -112,7 +112,7 @@
                 </div><br>
 
 
-                <div id="first_content">
+                <div id="first_edu_content">
                     <div class="edu_container">
                         <br>
                         <hr><br>
@@ -172,41 +172,46 @@
                     </label>
                 </div><br>
 
-                <br>
-                <hr><br>
+                <div id="first_work_content">
+                    <div class="work_container">
+                        <br>
+                        <hr><br>
 
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Company Name</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Job Title</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Start Date</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">End Date</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Job Responsibilities</span>
-                    </label>
-                </div><br>
-                <button id="container-button">Add Job</button>
-                <button id="container-button">Remove Job</button>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Company Name</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Job Title</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="month" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Start Date</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="month" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">End Date</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Job Responsibilities</span>
+                            </label>
+                        </div><br>
+                    </div>
+                </div>
+                <div id="more_work"></div>
+                <button id="container-button" onclick="add_job()">Add Job</button>
+                <button id="container-button" onclick="rm_job()">Remove Job</button>
             </div>
 
 
@@ -219,23 +224,31 @@
                     </label>
                 </div><br>
 
-                <br>
-                <hr><br>
+                <div id="first_skill_content">
+                    <div class="skill_container">
+                        <br>
+                        <hr><br>
 
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Skill Name</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Skill Details</span>
-                    </label>
-                </div><br>
-                <button id="container-button">Add Skill</button>
-                <button id="container-button">Remove Skill</button>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Skill Name</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Skill Details</span>
+                            </label>
+                        </div><br>
+
+                    </div>
+                </div>
+
+                <div id="more_skill"></div>
+
+                <button id="container-button" onclick="add_skill()">Add Skill</button>
+                <button id="container-button" onclick="rm_skill()">Remove Skill</button>
             </div>
 
 
@@ -249,29 +262,36 @@
                     </label>
                 </div><br>
 
-                <br>
-                <hr><br>
+                <div id="first_project_content">
+                    <div class="project_container">
+                        <br>
+                        <hr><br>
 
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Project Name</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Project Description</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Link to Project</span>
-                    </label>
-                </div><br>
-                <button id="container-button">Add Project</button>
-                <button id="container-button">Remove Project</button>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Project Name</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Project Description</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Link to Project</span>
+                            </label>
+                        </div><br>
+
+                    </div>
+                </div>
+
+                <div id="more_project"></div>
+                <button id="container-button" onclick="add_project()">Add Project</button>
+                <button id="container-button" onclick="rm_project()">Remove Project</button>
             </div>
 
 
@@ -286,29 +306,35 @@
                     </label>
                 </div><br>
 
-                <br>
-                <hr><br>
+                <div id="first_award_content">
+                    <div class="award_container">
+                        <br>
+                        <hr><br>
 
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Award Name</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Awarder</span>
-                    </label>
-                </div><br>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Summary</span>
-                    </label>
-                </div><br>
-                <button id="container-button">Add Award</button>
-                <button id="container-button">Remove Award</button>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Award Name</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Awarder</span>
+                            </label>
+                        </div><br>
+                        <div class="form">
+                            <input type="text" name="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">Summary</span>
+                            </label>
+                        </div><br>
+
+                    </div>
+                </div>
+                <div id="more_award"></div>
+                <button id="container-button" onclick="add_award()">Add Award</button>
+                <button id="container-button" onclick="rm_award()">Remove Award</button>
             </div>
 
 

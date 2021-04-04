@@ -96,10 +96,49 @@ $('#award').click(function () {
 })
 
 function add_school(){
-   $('#first_content .edu_container').clone()
+   $('#first_edu_content .edu_container').clone()
    .find('input').val('').end()
    .appendTo('#more_school');
 }
 function rm_school(){
     $('#more_school .edu_container').last().remove();
 }
+
+
+function add_job(){
+    $('#first_work_content .work_container').clone()
+    .find('input').val('').end()
+    .appendTo('#more_work');
+ }
+ function rm_job(){
+     $('#more_work .work_container').last().remove();
+ }
+
+
+ function add_skill(){
+    $('#first_skill_content .skill_container').clone()
+    .find('input').val('').end()
+    .appendTo('#more_skill');
+ }
+ function rm_skill(){
+     $('#more_skill .skill_container').last().remove();
+ }
+
+
+ function add_project(){
+    $('#first_project_content .project_container').clone()
+    .find('input').val('').end()
+    .appendTo('#more_project');
+ }
+ function rm_project(){
+     $('#more_project .project_container').last().remove();
+ }
+
+ function add_award(){
+    $('#first_award_content .award_container').clone()
+    .find('input').val('').end()
+    .appendTo('#more_award');
+ }
+ function rm_award(){
+     $('#more_award .award_container').last().remove();
+ }
