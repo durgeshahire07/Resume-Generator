@@ -11,14 +11,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <script src="script.js/jquery-3.6.0.min.js"></script>
-  <script>
+  <script src="script.js/script.js"></script>
+  <!-- <script>
       console.log($)
       $("p").click();
       $("p").click(function(){
           console.log("you have clicked")
       })
-  </script>
+  </script> -->
     <header>
         <i class="fas fa-3x fa-file-contract"></i>
        <nav>
@@ -35,21 +35,20 @@
 
         <div class="left-col">
             <ol class="left-nav">
-                <li><p id="profile" onclick="profile()">Profile</p></li>
-                <li><p id="education" onclick="education()">Education</p></li>
-                <li><p id="work" onclick="work()">Work</p></li>
-                <li><p id="skill" onclick="skill()">Skill</p></li>
-                <li><p id="project" onclick="project()">Projects</p></li>
-                <li><p id="award" onclick="award()">Awards</p></li>
+                <li><p id="profile">Profile</p></li>
+                <li><p id="education" >Education</p></li>
+                <li><p id="work" >Work</p></li>
+                <li><p id="skill" >Skill</p></li>
+                <li><p id="project" >Projects</p></li>
+                <li><p id="award" >Awards</p></li>
             </ol>
         </div>
 
 
-
         <div class="center-col" style="position: relative;">
             
-         <div >
-             <h2>Personal Info</h2>
+         <div id="personal-info" >
+             <h3>YOUR PERSONAL INFO</h3>
              <div class="form">
                 <input type="text" name="name" autocomplete="off" required />
                 <label for="name" class="label-name">
@@ -81,40 +80,216 @@
                 </label>    
             </div><br>   
          </div>
-         <!-- <div >
-            <h2>Perzssdgsd Info</h2>
+
+
+         <div id="education-info" >
+            <h3>YOUR EDUCATION BACKGROUND</h3>
             <div class="form">
                <input type="text" name="name" autocomplete="off" required />
                <label for="name" class="label-name">
-                   <span class="content-name">Full sgddName</span>
+                   <span class="content-name">Section Heading</span>
                </label> 
            </div><br>
+           
+            <br><hr><br>
+          
            <div class="form">
                <input type="text" name="name" autocomplete="off" required />
                <label for="name" class="label-name">
-                   <span class="content-name">Email Address</span>
+                   <span class="content-name">School Name</span>
                </label>    
            </div><br>
            <div class="form">
                <input type="text" name="name" autocomplete="off" required />
                <label for="name" class="label-name">
-                   <span class="content-name">Phone Number</span>
+                   <span class="content-name">Degree</span>
                </label>    
            </div><br>
            <div class="form">
                <input type="text" name="name" autocomplete="off" required />
                <label for="name" class="label-name">
-                   <span class="content-name">Location</span>
+                   <span class="content-name">Major</span>
                </label>    
            </div><br>
            <div class="form">
                <input type="text" name="name" autocomplete="off" required />
                <label for="name" class="label-name">
-                   <span class="content-name">Link</span>
+                   <span class="content-name">GPA</span>
+               </label>    
+           </div><br>  
+           <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Start Date</span>
+            </label>    
+        </div><br>  
+        <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">End Date</span>
+            </label>    
+        </div><br>
+        <button id="container-button">Add School</button>
+        <button id="container-button">Remove School</button>
+        </div>
+
+
+        <div id="work-info"  >
+            <h3>YOUR WORK EXPERIENCE</h3>
+            <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Section Heading</span>
+               </label> 
+           </div><br>
+           
+            <br><hr><br>
+          
+           <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Company Name</span>
+               </label>    
+           </div><br>
+           <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Job Title</span>
+               </label>    
+           </div><br>
+           <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Start Date</span>
+            </label>    
+        </div><br>  
+        <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">End Date</span>
+            </label>    
+        </div><br>
+        <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Job Responsibilities</span>
+            </label>    
+        </div><br>
+        <button id="container-button">Add Job</button>
+        <button id="container-button">Remove Job</button> 
+        </div>
+
+        
+        <div id="skill-info" >
+            <h3>YOUR SKILLS</h3>
+            <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Section Heading</span>
+               </label> 
+           </div><br>
+           
+            <br><hr><br>
+          
+           <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Skill Name</span>
                </label>    
            </div><br>   
-        </div> -->
-         
+           <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Skill Details</span>
+            </label>    
+        </div><br>   
+        <button id="container-button">Add Skill</button>
+        <button id="container-button">Remove Skill</button> 
+        </div>
+
+
+
+        <div id="project-info"   >
+            <h3>YOUR PROJECTS</h3>
+            <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Section Heading</span>
+               </label> 
+           </div><br>
+           
+            <br><hr><br>
+          
+           <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Project Name</span>
+               </label>    
+           </div><br> 
+           <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Project Description</span>
+            </label>    
+        </div><br>  
+        <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Link to Project</span>
+            </label>    
+        </div><br> 
+        <button id="container-button">Add Project</button>
+        <button id="container-button">Remove Project</button> 
+        </div>
+
+
+
+        
+         <div id="award-info"   >
+            <h3>HONORS & AWARDS</h3>
+            <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Section Heading</span>
+               </label> 
+           </div><br>
+           
+            <br><hr><br>
+          
+           <div class="form">
+               <input type="text" name="name" autocomplete="off" required />
+               <label for="name" class="label-name">
+                   <span class="content-name">Award Name</span>
+               </label>    
+           </div><br> 
+           <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Awarder</span>
+            </label>    
+        </div><br>  
+        <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+                <span class="content-name">Summary</span>
+            </label>    
+        </div><br> 
+        <button id="container-button">Add Award</button>
+        <button id="container-button">Remove Award</button> 
+        </div>
+
+
+        
+
+        
+
+
+
+
+
+
+
+
 
 
 
