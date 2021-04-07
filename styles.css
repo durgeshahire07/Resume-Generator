@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
     /* background-color: #24252A; */
     /* background-color: #ffffff; */
 }
@@ -46,7 +47,9 @@ i{
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
-
+#resumeHr{
+    color: black;
+}
 .nav_links li a:hover {
     color: #016b8f;
     font-size: 20px;
@@ -145,6 +148,7 @@ button:hover{
     min-height: 500px;
     height: 110px;
   overflow: scroll;
+  
  }
 .center-col{
     width: 40%;
@@ -260,14 +264,48 @@ footer{
     /* border: 1px solid red; */
 
   }
-  .user-img {
-    background-color: black;
-    border: 3px solid rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-  }
+  
   .user-name {
     color: #FFF;
     font-family: Rubik;
   }
+
+ 
+  .resume-left-area img{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid white; 
+      cursor: pointer;
+      user-select: none;
+     
+  }
+
+.resume-content{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.resume-left-area{
+    width: 35%;
+    background-color: #1b6392;
+   
+    
+}
+.resume-left-title{
+    font-size: 16px;
+}
+.resume-p-content{
+    font-size: 14px;
+}
+.resume-left-area .resume-img{
+    margin-top: 100px;  
+}
+#resume-username{
+    color: #FFF;
+    text-align: center;
+}
+
+.resume-right-area{
+    width: 65%;
+   
+}
