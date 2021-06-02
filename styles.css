@@ -147,19 +147,18 @@ button:hover{
     border-right-width: 0;
     min-height: 500px;
     height: 110px;
-  overflow: scroll;
+  overflow-x: scroll;
   
  }
 .center-col{
     width: 40%;
     float: left;
     min-height: 500px;
-     white-space: nowrap;
-     width: 40%;
-  height: 110px;
-  overflow-x: auto;
+    white-space: nowrap;
+    width: 40%;
+    height: 110px;
+    overflow-x: auto;
     border: 1px solid rgb(59, 57, 57);
-    
 }
 .form{
     width: 100%;
@@ -167,16 +166,63 @@ button:hover{
     height: 50px;
     overflow: hidden;
 }
+.form2{
+    width: 50%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+.form2 label{
+    position: absolute;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    bottom: 0px;
+    left: 1%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form2 label::after{
+    content: "";
+    left: 0px;
+    bottom: -1px;
+      position: absolute;
+    height: 100%;
+  width: 100%;
+    border-bottom: 2px solid #b3bcbe;
+    transition: all 0.5s ease;
+}
+
 .form input{
     width: 100%;
     height: 100%;
     padding-left: 5px;
-   color: #016b8f;
+    color: #016b8f;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     padding-top: 20px;
     border: none;
     outline: none;
+}
+.form2 input[name=input2]{
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    color: #016b8f;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.form2 input:focus+ .label-name .content-name, .form2 input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #0088a9;
+}
+.form2 input:focus + .label-name::after, .form2 input:valid+ .label-name::after{
+    border-bottom: 2px solid #0088a9;
 }
 input[type=month]:required:invalid::-webkit-datetime-edit {
     color: transparent;
@@ -184,6 +230,7 @@ input[type=month]:required:invalid::-webkit-datetime-edit {
 input[type=month]:focus::-webkit-datetime-edit {
     color: black !important;
 }
+
 .form label{
     position: absolute;
     font-size: 16px;
@@ -219,6 +266,7 @@ input[type=month]:focus::-webkit-datetime-edit {
 .form input:focus + .label-name::after, .form input:valid+ .label-name::after{
     border-bottom: 2px solid #0088a9;
 }
+
 footer{
     color: #0088a9;
     font-family: "Montserrat", sans-serif;

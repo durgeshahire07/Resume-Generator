@@ -8,7 +8,7 @@
     <title>Resume Builder</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -64,31 +64,31 @@
             <div id="personal-info">
                 <h3>YOUR PERSONAL INFO</h3>
                 <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
+                    <input type="text" name="name" id="user-name"autocomplete="off" required />
                     <label for="name" class="label-name">
                         <span class="content-name">Full Name</span>
                     </label>
                 </div><br>
                 <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
+                    <input type="text" name="name" id="user-email" autocomplete="off" required />
                     <label for="name" class="label-name">
                         <span class="content-name">Email Address</span>
                     </label>
                 </div><br>
                 <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
+                    <input type="text" name="name" autocomplete="off" id="user-phone" required />
                     <label for="name" class="label-name">
                         <span class="content-name">Phone Number</span>
                     </label>
                 </div><br>
                 <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
+                    <input type="text" name="name" autocomplete="off" id="user-location" required />
                     <label for="name" class="label-name">
                         <span class="content-name">Location</span>
                     </label>
                 </div><br>
                 <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
+                    <input type="text" name="name" autocomplete="off" id="user-link" required />
                     <label for="name" class="label-name">
                         <span class="content-name">Link</span>
                     </label>
@@ -211,31 +211,28 @@
 
             <div id="skill-info">
                 <h3>YOUR SKILLS</h3>
-                <div class="form">
-                    <input type="text" name="name" autocomplete="off" required />
-                    <label for="name" class="label-name">
-                        <span class="content-name">Section Heading</span>
-                    </label>
-                </div><br>
-
                 <div id="first_skill_content">
                     <div class="skill_container">
-                        <br>
+                       
                         <hr><br>
 
                         <div class="form">
                             <input type="text" name="name" autocomplete="off" required />
                             <label for="name" class="label-name">
-                                <span class="content-name">Skill Name</span>
+                                <span class="content-name" >Skill Name</span>
                             </label>
                         </div><br>
-                        <div class="form">
-                            <input type="text" name="name" autocomplete="off" required />
-                            <label for="name" class="label-name">
-                                <span class="content-name">Skill Details</span>
-                            </label>
-                        </div><br>
+                        <div >
+                            <div class="form2">
 
+                                <input type="text" name="input2" autocomplete="off" required />
+                                <label for="name" class="label-name">
+                                    <span class="content-name" >Skill Details</span>
+                                </label>
+
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -339,8 +336,7 @@
 
             <div style="margin:0;padding: 0; box-sizing: border-box;
             
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            ">
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
                 <div class="resume-content" style="margin:0;padding: 0;">
 
                     <div class="resume-left-area">
@@ -353,17 +349,16 @@
                         <div style="padding-left: 20px;color: white">
                             <div style="padding-bottom: 30px;">
                                 <p class="resume-left-title"><b>Details</b></p>
-                                <p class="resume-p-content">Banglore, Karnataka</p>
-
+                                <p class="resume-p-content" id="resume-user-location">Banglore, Karnataka</p> 
+                                <p class="resume-p-content" id="resume-user-email">durgeshahire07gmail.com</p>
+                                <p class="resume-p-content" id="resume-user-link">www.myportfolio.com</p>
                                 <p style="float: left;" class="resume-p-content">Phone:&nbsp</p>
-                                <p class="resume-p-content">9511862149</p>
-                                <p class="resume-p-content">durgeshahire07gmail.com</p>
-                                <p class="resume-p-content">www.myportfolio.com</p>
+                                <p class="resume-p-content" id="resume-user-phone">9511862149</p>
                             </div>
 
 
                             <div style="padding-bottom: 30px;">
-                                <p class="resume-left-title"><b>Skills</b></p>
+                                <p class="resume-left-title" id="resume-skill-heading"><b>Skills</b></p>
                                 <p class="resume-p-content">C++</p>
                                 <p class="resume-p-content">JavaScript</p>
                             </div>
@@ -416,14 +411,14 @@
                                 <p style="color: black;font-size: 12px;">Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Nulla magni ea explicabo libero? Assumenda molestias iure
                                     laudantium cupiditate, possimus tempore neque,</p>
-                               
+
                                 <br>
 
                                 <p class="resume-p-content" style="color: black;"><b>Project Name</b></p>
                                 <p style="color: black;font-size: 12px;">Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Nulla magni ea explicabo libero? Assumenda molestias iure
                                     laudantium cupiditate, possimus tempore neque,</p>
-                                
+
                             </div>
 
 
@@ -461,7 +456,7 @@
                                 <p style="color: black;font-size: 12px;">Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Nulla magni ea explicabo libero? Assumenda molestias iure
                                     laudantium cupiditate, possimus tempore neque,</p>
-                               
+
 
 
                                 <br>
@@ -473,7 +468,7 @@
                                 <p style="color: black;font-size: 12px;">Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Nulla magni ea explicabo libero? Assumenda molestias iure
                                     laudantium cupiditate, possimus tempore neque,</p>
-                                
+
                             </div>
 
 

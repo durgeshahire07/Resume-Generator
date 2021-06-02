@@ -95,6 +95,39 @@ $('#award').click(function () {
    
 })
 
+$('#user-name').change(function(){
+   var name = $('#user-name').val();
+    $('#resume-username').text(name);
+})
+
+$('#user-email').change(function(){
+    var email = $('#user-email').val();
+     $('#resume-user-email').text(email);
+})
+
+
+$('#user-phone').change(function(){
+    var email = $('#user-phone').val();
+     $('#resume-user-phone').text(email);
+})
+
+$('#user-location').change(function(){
+    var loc = $('#user-location').val();
+     $('#resume-user-location').text(loc);
+})
+
+$('#user-link').change(function(){
+    var link = $('#user-link').val();
+     $('#resume-user-link').text(link);
+})
+
+$('#skill-heading').change(function(){
+    var title = $('#skill-heading').val();
+     $('#resume-skill-heading').text(title);
+     $('#resume-skill-heading').css('font-weight', 'bold');
+})
+
+
 function add_school(){
    $('#first_edu_content .edu_container').clone()
    .find('input').val('').end()
@@ -142,3 +175,5 @@ function add_job(){
  function rm_award(){
      $('#more_award .award_container').last().remove();
  }
+
+ 
