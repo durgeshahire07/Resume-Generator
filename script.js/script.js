@@ -95,6 +95,7 @@ $('#award').click(function () {
    
 })
 
+//user-profile
 $('#user-name').change(function(){
    var name = $('#user-name').val();
     $('#resume-username').text(name);
@@ -104,7 +105,6 @@ $('#user-email').change(function(){
     var email = $('#user-email').val();
      $('#resume-user-email').text(email);
 })
-
 
 $('#user-phone').change(function(){
     var email = $('#user-phone').val();
@@ -126,6 +126,33 @@ $('#skill-heading').change(function(){
      $('#resume-skill-heading').text(title);
      $('#resume-skill-heading').css('font-weight', 'bold');
 })
+
+//work-section
+$('#company-name').change(function(){
+    var name = $('#company-name').val();
+     $('#resume-company-name').text(name);
+ })
+
+ $('#job-title').change(function(){
+    var name = $('#job-title').val();
+     $('#job-name').text(name);
+ })
+
+ $('#job-description').change(function(){
+    var name = $('#job-description').val();
+     $('#resume-job-des').text(name);
+ })
+
+ $('#start-date').change(function(){
+    var name = $('#start-date').val();
+     $('#resume-start-date').text(name);
+ })
+
+ $('#end-date').change(function(){
+    var name = $('#end-date').val();
+     $('#resume-end-date').text(name);
+ })
+
 
 
 function add_school(){
@@ -175,5 +202,18 @@ function add_job(){
  function rm_award(){
      $('#more_award .award_container').last().remove();
  }
+
+ document.getElementById("download").addEventListener("click",()=>{
+     const resume = this.document.getElementById("resume");
+     console.log(window);
+     var opt = {
+        margin:       0,
+        filename:     'resume.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+     html2pdf().from(resume).set(opt).save();
+ })
 
  
