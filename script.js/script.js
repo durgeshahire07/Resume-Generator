@@ -202,7 +202,21 @@ function add_job(){
  function rm_award(){
      $('#more_award .award_container').last().remove();
  }
+ function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#blah').attr('src', e.target.result);
+        }
+        
+        reader.readAsDataURL(input.files[0]);
+    }
+}
 
+$("#imgInp").change(function(){
+    readURL(this);
+});
  document.getElementById("download").addEventListener("click",()=>{
      const resume = this.document.getElementById("resume");
      console.log(window);
